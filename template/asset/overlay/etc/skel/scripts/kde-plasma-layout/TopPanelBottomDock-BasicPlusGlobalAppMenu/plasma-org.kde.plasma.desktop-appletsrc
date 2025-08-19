@@ -112,13 +112,7 @@ global=Alt+F1
 
 [Containments][2][Applets][4]
 immutability=1
-plugin=org.kde.plasma.pager
-
-[Containments][2][Applets][4][Configuration][General]
-currentDesktopSelected=1
-showOnlyCurrentScreen=true
-showWindowIcons=true
-wrapPage=true
+plugin=org.kde.plasma.appmenu
 
 [Containments][2][Applets][5]
 immutability=1

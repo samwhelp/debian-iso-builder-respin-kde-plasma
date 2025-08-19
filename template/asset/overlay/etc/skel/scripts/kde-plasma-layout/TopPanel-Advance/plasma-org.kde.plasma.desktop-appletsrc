@@ -43,38 +43,6 @@ positions={"1366x768":[]}
 Image=/usr/share/wallpapers/Next/
 SlidePaths=/usr/share/wallpapers/
 
-[Containments][19]
-activityId=
-formfactor=2
-immutability=1
-lastScreen=0
-location=4
-plugin=org.kde.panel
-wallpaperplugin=org.kde.image
-
-[Containments][19][Applets][20]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][19][Applets][20][Configuration][General]
-fill=false
-forceStripes=true
-iconSpacing=2
-launchers=applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,preferred://browser,applications:org.kde.konsole.desktop,applications:systemsettings.desktop,applications:org.kde.discover.desktop
-maxStripes=1
-showOnlyCurrentActivity=true
-showOnlyCurrentDesktop=true
-showOnlyCurrentScreen=false
-showToolTips=false
-wheelSkipMinimized=false
-
-[Containments][19][Applets][21]
-immutability=1
-plugin=org.kde.plasma.minimizeall
-
-[Containments][19][General]
-AppletOrder=20;21
-
 [Containments][2]
 activityId=
 formfactor=2
@@ -86,12 +54,26 @@ wallpaperplugin=org.kde.image
 
 [Containments][2][Applets][18]
 immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][2][Applets][18][Configuration][Appearance]
+customDateFormat=yyyy-MM-dd
+dateFormat=custom
+showSeconds=Always
+use24hFormat=2
+
+[Containments][2][Applets][19]
+immutability=1
 plugin=org.kde.plasma.userswitcher
 
-[Containments][2][Applets][18][Configuration][General]
+[Containments][2][Applets][19][Configuration][General]
 showFace=true
 showName=false
 showTechnicalInfo=true
+
+[Containments][2][Applets][20]
+immutability=1
+plugin=org.kde.plasma.minimizeall
 
 [Containments][2][Applets][3]
 immutability=1
@@ -126,13 +108,19 @@ plugin=org.kde.plasma.panelspacer
 
 [Containments][2][Applets][6]
 immutability=1
-plugin=org.kde.plasma.digitalclock
+plugin=org.kde.plasma.icontasks
 
-[Containments][2][Applets][6][Configuration][Appearance]
-customDateFormat=yyyy-MM-dd
-dateFormat=custom
-showSeconds=Always
-use24hFormat=2
+[Containments][2][Applets][6][Configuration][General]
+fill=false
+forceStripes=true
+iconSpacing=2
+launchers=applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,preferred://browser,applications:org.kde.konsole.desktop,applications:systemsettings.desktop,applications:org.kde.discover.desktop
+maxStripes=1
+showOnlyCurrentActivity=true
+showOnlyCurrentDesktop=true
+showOnlyCurrentScreen=false
+showToolTips=false
+wheelSkipMinimized=false
 
 [Containments][2][Applets][7]
 immutability=1
@@ -146,7 +134,7 @@ plugin=org.kde.plasma.systemtray
 SystrayContainmentId=9
 
 [Containments][2][General]
-AppletOrder=3;4;5;6;7;8;18
+AppletOrder=3;4;5;6;7;8;18;19;20
 
 [Containments][9]
 activityId=
@@ -192,7 +180,7 @@ plugin=org.kde.plasma.keyboardlayout
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
-[Containments][9][Applets][22]
+[Containments][9][Applets][21]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
