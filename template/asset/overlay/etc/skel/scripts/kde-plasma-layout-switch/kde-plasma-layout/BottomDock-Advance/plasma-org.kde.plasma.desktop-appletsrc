@@ -28,6 +28,7 @@ remove=true
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
+ItemGeometriesHorizontal=
 activityId=9d8ae070-8a25-4665-b7fc-5c80a2a1336e
 formfactor=0
 immutability=1
@@ -43,7 +44,7 @@ positions={"1366x768":[]}
 Image=/usr/share/wallpapers/Next/
 SlidePaths=/usr/share/wallpapers/
 
-[Containments][18]
+[Containments][2]
 activityId=
 formfactor=2
 immutability=1
@@ -52,11 +53,62 @@ location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
-[Containments][18][Applets][19]
+[Containments][2][Applets][17]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][2][Applets][17][Configuration][Appearance]
+customDateFormat=yyyy-MM-dd
+dateFormat=custom
+fontWeight=400
+showSeconds=2
+use24hFormat=2
+
+[Containments][2][Applets][18]
+immutability=1
+plugin=org.kde.plasma.userswitcher
+
+[Containments][2][Applets][18][Configuration][General]
+showFace=true
+showName=false
+showTechnicalInfo=true
+
+[Containments][2][Applets][19]
+immutability=1
+plugin=org.kde.plasma.minimizeall
+
+[Containments][2][Applets][3]
+immutability=1
+plugin=org.kde.plasma.kickoff
+
+[Containments][2][Applets][3][Configuration][General]
+alphaSort=true
+favorites=applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,preferred://browser,applications:org.kde.konsole.desktop,applications:systemsettings.desktop,applications:org.kde.discover.desktop
+favoritesDisplay=1
+favoritesPortedToKAstats=false
+icon=start-here
+lengthFirstMargin=8
+paneSwap=true
+switchCategoryOnHover=true
+
+[Containments][2][Applets][3][Configuration][Shortcuts]
+global=Alt+F1
+
+[Containments][2][Applets][4]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][2][Applets][4][Configuration][General]
+currentDesktopSelected=1
+showOnlyCurrentScreen=true
+showWindowIcons=true
+wrapPage=true
+
+[Containments][2][Applets][5]
 immutability=1
 plugin=org.kde.plasma.icontasks
 
-[Containments][18][Applets][19][Configuration][General]
+[Containments][2][Applets][5][Configuration][General]
 fill=false
 forceStripes=true
 iconSpacing=2
@@ -68,65 +120,9 @@ showOnlyCurrentScreen=false
 showToolTips=false
 wheelSkipMinimized=false
 
-[Containments][18][Applets][20]
-immutability=1
-plugin=org.kde.plasma.minimizeall
-
-[Containments][18][General]
-AppletOrder=19;20
-
-[Containments][2]
-activityId=
-formfactor=2
-immutability=1
-lastScreen=0
-location=3
-plugin=org.kde.panel
-wallpaperplugin=org.kde.image
-
-[Containments][2][Applets][17]
-immutability=1
-plugin=org.kde.plasma.userswitcher
-
-[Containments][2][Applets][17][Configuration][General]
-showFace=true
-showName=false
-showTechnicalInfo=true
-
-[Containments][2][Applets][3]
-immutability=1
-plugin=org.kde.plasma.kickoff
-
-[Containments][2][Applets][3][Configuration][General]
-alphaSort=true
-favorites=applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,preferred://browser,applications:org.kde.konsole.desktop,applications:systemsettings.desktop,applications:org.kde.discover.desktop
-favoritesDisplay=1
-favoritesPortedToKAstats=false
-icon=start-here-kde
-lengthFirstMargin=8
-paneSwap=true
-switchCategoryOnHover=true
-
-[Containments][2][Applets][3][Configuration][Shortcuts]
-global=Alt+F1
-
-[Containments][2][Applets][4]
-immutability=1
-plugin=org.kde.plasma.panelspacer
-
-[Containments][2][Applets][5]
-immutability=1
-plugin=org.kde.plasma.digitalclock
-
-[Containments][2][Applets][5][Configuration][Appearance]
-customDateFormat=yyyy-MM-dd
-dateFormat=custom
-showSeconds=Always
-use24hFormat=2
-
 [Containments][2][Applets][6]
 immutability=1
-plugin=org.kde.plasma.panelspacer
+plugin=org.kde.plasma.marginsseparator
 
 [Containments][2][Applets][7]
 immutability=1
@@ -136,14 +132,14 @@ plugin=org.kde.plasma.systemtray
 SystrayContainmentId=8
 
 [Containments][2][General]
-AppletOrder=3;4;5;6;7;17
+AppletOrder=3;4;5;6;7;17;18;19
 
 [Containments][8]
 activityId=
 formfactor=2
 immutability=1
 lastScreen=-1
-location=3
+location=4
 plugin=org.kde.plasma.private.systemtray
 wallpaperplugin=org.kde.image
 
@@ -178,7 +174,7 @@ plugin=org.kde.plasma.keyboardlayout
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
-[Containments][8][Applets][21]
+[Containments][8][Applets][20]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
